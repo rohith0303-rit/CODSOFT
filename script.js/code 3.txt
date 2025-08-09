@@ -1,0 +1,21 @@
+let res = document.getElementById("result");
+
+function getVal(num){
+    res.value += num;
+}
+
+function clr(){
+    res.value = "";
+}
+
+function back(){
+    res.value = res.value.slice(0,-1);
+}
+
+function solve(){
+    try{
+        res.value = eval(res.value);
+    }catch(err){
+        res.value = "Err";
+    }
+}
