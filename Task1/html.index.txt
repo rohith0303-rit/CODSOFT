@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calc-box">
+    <input type="text" id="result" disabled>
+
+    <div class="btns">
+        <button onclick="clr()">C</button>
+        <button onclick="back()">←</button>
+        <button onclick="getVal('/')">/</button>
+        <button onclick="getVal('*')">*</button>
+
+        <button onclick="getVal('7')">7</button>
+        <button onclick="getVal('8')">8</button>
+        <button onclick="getVal('9')">9</button>
+        <button onclick="getVal('-')">-</button>
+
+        <button onclick="getVal('4')">4</button>
+        <button onclick="getVal('5')">5</button>
+        <button onclick="getVal('6')">6</button>
+        <button onclick="getVal('+')">+</button>
+
+        <button onclick="getVal('1')">1</button>
+        <button onclick="getVal('2')">2</button>
+        <button onclick="getVal('3')">3</button>
+        <button onclick="solve()">=</button>
+
+        <button class="zero" onclick="getVal('0')">0</button>
+        <button onclick="getVal('.')">.</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
